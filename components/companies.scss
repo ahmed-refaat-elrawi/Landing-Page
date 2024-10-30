@@ -1,0 +1,39 @@
+/*Companies*/
+.companies {
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+  justify-content: space-between;
+  margin-bottom: 12.4rem;
+
+  &__img {
+    width: 17rem;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 900px) {
+  .companies {
+    display: flex;
+    align-items: center;
+    margin-top: 8rem;
+    justify-content: space-evenly;
+    margin-bottom: 12.4rem;
+
+    &__img {
+      width: 15rem;
+    }
+  }
+}
+@media screen and (max-width: 899px) and (min-width: 400px) {
+  .companies {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1rem;
+    margin-bottom: 6rem;
+    gap: 2rem;
+
+    &__img {
+      width: 50%;
+    }
+  }
+}
+/*End Companies*/

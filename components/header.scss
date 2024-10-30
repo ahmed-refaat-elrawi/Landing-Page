@@ -1,0 +1,37 @@
+/*Header */
+.header {
+  display: flex;
+  position: relative;
+  padding-top: 5rem;
+  justify-content: space-between;
+  align-items: center;
+
+  &__links {
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__signing {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+
+    &-in {
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-very-dark-blue);
+      transition: var(--animation-time);
+      &:hover {
+        color: var(--color-orange);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 400px) {
+ .header{
+    &__links {
+     display: none;
+    }
+  }
+}
+
